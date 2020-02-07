@@ -1,0 +1,53 @@
+" ############################# "
+" ##                         ## "
+" ##       Load Plugins      ## "
+" ##			     ## "
+" ############################# "
+
+call plug#begin('~/.vim/plugged')
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'preservim/nerdtree'
+call plug#end()
+
+
+
+
+" ############################ "
+" ##			    ## "
+" ##	Misc. Configs       ## "
+" ##			    ## "
+" ############################ "
+
+"--- Fix Airline Theme ---"
+let g:airline_powerline_fonts = 1
+
+"--- Configure NERDTree to open in new tabs ---"
+let NERDTreeMapOpenInTab='<ENTER>'
+
+
+
+
+" ############################## "
+" ##			      ## "
+" ##    Custom Keybindings    ## "
+" ## 			      ## "
+" ############################## "
+
+"Toggle NerdTree on Ctrl-d"
+map <C-d> <ESC>:NERDTreeToggle<CR>
+
+"Next tab on Ctrl-y"
+map <C-y> <ESC>:tabn<CR>
+
+"Previous tab on Ctrl-r"
+map <C-r> <ESC>:tabp<CR>
+
+"New tab on Ctrl-t"
+map <C-t> <ESC>:tabnew<CR>
+
+"Close tab on Ctrl-f"
+map <C-f> <ESC>:tabclose<CR>
+
+"Save file on Ctrl-s"
+map <C-s> <ESC>:update<CR>
