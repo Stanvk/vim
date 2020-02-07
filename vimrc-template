@@ -1,7 +1,7 @@
 " ############################# "
 " ##                         ## "
 " ##       Load Plugins      ## "
-" ##			     ## "
+" ##			             ## "
 " ############################# "
 
 call plug#begin('~/.vim/plugged')
@@ -9,16 +9,21 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 Plug 'icymind/neosolarized'
+Plug 'bagrat/vim-buffet'
 call plug#end()
 
 
 
 
 " ############################ "
-" ##			    ## "
+" ##			            ## "
 " ##	Misc. Configs       ## "
-" ##			    ## "
+" ##                        ## "
 " ############################ "
+
+"--- Set colours ---"
+set termguicolors
+syntax enable
 
 "--- Fix Airline Theme ---"
 let g:airline_powerline_fonts=1
@@ -32,9 +37,13 @@ set nu
 "--- Set Linespacing --- "
 set linespace=10
 
-"--- Set Colourscheme ---"
-"colorscheme NeoSolarized
-"set background=dark
+"--- Set Colourscheme and Airline theme ---"
+colorscheme NeoSolarized
+set background=dark
+let g:neosolarized_contrast = "normal"
+let g:neosolarized_visibility = "normal"
+let g:neosolarized_vertSplitBgTrans = 1
+let g:airline_theme="luna"
 
 "--- Set seach Highlighting ---"
 set hlsearch
@@ -48,12 +57,17 @@ set tabstop=4
 "--- Set the ruler ---"
 set ruler
 
+"--- Set configuration for Vim-buffet plugin ---"
+let g:buffet_powerline_separators = 1
+let g:buffet_tab_icon = "\uf00a"
+let g:buffet_left_trunc_icon = "\uf0a8"
+let g:buffet_right_trunc_icon = "\uf0a9"
 
 
 " ############################## "
-" ##			      ## "
+" ##                          ## "
 " ##    Custom Keybindings    ## "
-" ## 			      ## "
+" ## 			              ## "
 " ############################## "
 
 "Toggle NerdTree on Ctrl-t"
