@@ -20,11 +20,6 @@ call plug#end()
 " ##                        ## "
 " ############################ "
 
-"--- Vim Buffet TabLine ---"
-let g:buffet_always_show_tabline = 1
-let g:buffet_powerline_separators = 1
-let g:buffet_show_index = 1
-
 "--- Set colours ---"
 set termguicolors
 syntax enable
