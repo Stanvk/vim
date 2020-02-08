@@ -9,7 +9,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
 Plug 'icymind/neosolarized'
-Plug 'bagrat/vim-buffet'
 call plug#end()
 
 
@@ -20,6 +19,11 @@ call plug#end()
 " ##	Misc. Configs       ## "
 " ##                        ## "
 " ############################ "
+
+"--- Vim Buffet TabLine ---"
+let g:buffet_always_show_tabline = 1
+let g:buffet_powerline_separators = 1
+let g:buffet_show_index = 1
 
 "--- Set colours ---"
 set termguicolors
@@ -74,16 +78,13 @@ let g:buffet_right_trunc_icon = "\uf0a9"
 map <C-t> <ESC>:NERDTreeToggle<CR>
 
 "Next tab on alt-right"
-map [C <ESC>:tabn<CR>
+map <M-Right> <ESC>:tabn<CR>
 
 "Previous tab on alt-left"
-map [D <ESC>:tabp<CR>
+map <M-Left> <ESC>:tabp<CR>
 
 "New tab on alt-t"
-map † <ESC>:tabnew<CR>
+map t <ESC>:tabnew<CR>
 
 "Close tab on alt-r"
-map ® <ESC>:tabclose<CR>
-
-"Save file on Ctrl-s"
-map <C-s> <ESC>:update<CR>
+map r <ESC>:tabclose<CR>
