@@ -69,10 +69,24 @@ set ruler
 "
 " Set some custom keybindings.
 "
+
+"Map Control-t to Tree toggle
 map <C-t> <ESC>:NERDTreeToggle<CR>
+
+"Map Alt-Right to next tab
 map [C <ESC>:tabn<CR>
+
+"Map Alt-Left to previous tab
 map [D <ESC>:tabp<CR>
+
+"Map Alt-t to new tab
 map † <ESC>:tabnew<CR>
+
+"Map Alt-r to close tab
 map ® <ESC>:tabclose<CR>
+
+"Map \-s to :update
 map <Leader>s <ESC>:update<CR>
+
+"Map \-q to quit
 map <Leader>q <ESC>:q<CR>
