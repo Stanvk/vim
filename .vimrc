@@ -70,8 +70,9 @@ set ruler
 " Set some custom keybindings.
 "
 map <C-t> <ESC>:NERDTreeToggle<CR>
-map <M-Right> <ESC>:tabn<CR>
-map <M-Left> <ESC>:tabp<CR>
-map t <ESC>:tabnew<CR>
-map r <ESC>:tabclose<CR>
+map [C <ESC>:tabn<CR>
+map [D <ESC>:tabp<CR>
+map † <ESC>:tabnew<CR>
+map ® <ESC>:tabclose<CR>
 map <Leader>s <ESC>:update<CR>
+map <Leader>q <ESC>:q<CR>
